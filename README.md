@@ -1,5 +1,5 @@
-Project structure
-typed-async-utility/
+# Project structure
+# typed-async-utility/
 │
 ├── src/
 │   ├── types.ts
@@ -7,14 +7,14 @@ typed-async-utility/
 │   └── index.ts
 │
 └── tsconfig.json
-Install
+# Install
 npm init -y
 
 npm install -D  @types/node
 
 npx tsc --init
-update tsconfig.json as
-{
+# update tsconfig.json as
+# {
   "compilerOptions": {
     "target": "ES2022",
     "module": "NodeNext",
@@ -28,14 +28,14 @@ update tsconfig.json as
   },
   "include": ["src"]
 }
-update package.json
-{
+# update package.json :
+# {
   "type": "module",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js"
   }
 }
-To execute
+# To execute :
 npm run build
 npm start
