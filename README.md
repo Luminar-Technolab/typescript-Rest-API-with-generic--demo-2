@@ -14,7 +14,7 @@ npm install -D  @types/node
 
 npx tsc --init
 # update tsconfig.json as
-# {
+ {
   "compilerOptions": {
     "target": "ES2022",
     "module": "NodeNext",
@@ -29,7 +29,7 @@ npx tsc --init
   "include": ["src"]
 }
 # update package.json :
-# {
+{
   "type": "module",
   "scripts": {
     "build": "tsc",
